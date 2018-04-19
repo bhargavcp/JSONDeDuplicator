@@ -105,6 +105,8 @@ class DownloadComponent extends Component {
         after that list is exhausted, we continue with the next lead object in the _id list.
         It is a kind of modified DFS where I am using a dictionary to keep track
         of the visited nodes and form arrays of similar lead objects (for fast lookup).
+        The traversal only goes one-level deep from each node
+        in the _id properties and does not go any further for nodes in email properties.
         Important thing to note here is, because of navigating through the graph
         in such a manner, we get access to the Transitive Property of Equality,
         which is if a == b and b == c then a == c.
