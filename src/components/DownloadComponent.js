@@ -99,8 +99,8 @@ class DownloadComponent extends Component {
 
     /*
         This method goes over the nodes in the adjacency list.
-        How it works: We only iterate over lists of lead objects which are
-        have same _id. For each element in the list, we pick its email
+        How it works: We only iterate over lists of lead objects which
+        shared the same _id. For each element in the list, we pick its email
         and iterate over the list of lead objects with that email, and
         after that list is exhausted, we continue with the next lead object in the _id list.
         It is a kind of modified DFS where I am using a dictionary to keep track
@@ -115,7 +115,7 @@ class DownloadComponent extends Component {
         const consolidatedDuplicates = [];
 
         for (const key in graphOfLeads) {
-            if (!(/(.+)@(.+){2,}\.(.+){2,}/.test(key))) {
+            if (!(/(.+)@(.+){2,}\.(.+){2,}/.test(key))) { //Regex to skip over 'email' properties, since they will be visited from leads in the various _id properties.
 
                 const currentArray = graphOfLeads[key];
                 const currentSetOfDuplicateLeads = new Set([]);
