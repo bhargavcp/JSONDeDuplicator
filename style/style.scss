@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.download-button {
+  text-align: center;
+  margin: auto;
+}
+
+.unique-leads {
+  margin-top: 20px;
+  .card {
+    .card-header {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.diff-div {
+  margin-top: 20px;
+}
+
+.list-group-item.active {
+  background-color: #6FACCA;
+  border-color: #6FACCA;
+}
+
+.blue {
+  color: #6FACCA;
+}
+
+.grey {
+  color: grey;
+}
+
+.reason-for-diff {
+
+}
+
+.identical-keys {
+  background-color: #9AFF8E;
+}
+
+.non-identical-keys {
+  background-color: #FA7272;
+}
