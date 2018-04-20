@@ -8,7 +8,7 @@ import '../../style/style.scss';
 
     The meat of the logic is present in this component.
  */
-class DownloadComponent extends Component {
+class UploadComponent extends Component {
 
     constructor(props) {
         super(props);
@@ -178,4 +178,4 @@ class DownloadComponent extends Component {
     };
 }
 
-export default DownloadComponent;
+export default UploadComponent;

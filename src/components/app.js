@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import DownloadComponent from './DownloadComponent';
+import UploadComponent from './UploadComponent';
 
 export default class App extends Component {
   render() {
     return (
         <div>
-            <DownloadComponent />
+            <UploadComponent />
         </div>
     );
   }
